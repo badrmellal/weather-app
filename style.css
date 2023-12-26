@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: url('/images/weather-badr-app.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    height: 100vh;
+
+}
+
+
+#gradient {
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    margin: 0px;
+}
+
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 470px;
+    color: #fff;
+    margin: 0 auto 0;
+    border-radius: 12px;
+    text-align: center;
+    background: linear-gradient(to bottom, #333333, #1a1a1a); /* Adjust gradient colors */
+    padding: 30px 25px; /* Adjust padding for better spacing */
+}
+
+.search-field {
+    width: 100%;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column; /* Change to column for mobile */
+}
+
+.search-field input {
+    border: 0;
+    outline: 0;
+    background: #1a1a1a;
+    color: #b9b9b9;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 8px;
+    flex: 1;
+    margin-bottom: 20px; /* Add margin bottom for spacing */
+    font-size: 18px;
+}
+
+.search-field button {
+    cursor: pointer;
+    opacity: 1;
+}
+
+
+.weatherIcon {
+    width: 100px;
+    margin-top: 20px;
+}
+
+
+.weather-h1 {
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.weather-h2 {
+    font-size: 45px;
+    font-weight: 500;
+    margin-top: -10px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin-top: 30px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+
+.wind-speed,
+.condition {
+    font-size: 28px;
+    margin-top: -6px;
+}
+
+.weather-details {
+    display: none;
+    flex-direction: column; /* Change to column for mobile */
+}
+
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 768px) {
+    .card {
+        width: 70%;
+        height: auto;
+        max-width: none;
+    }
+
+    .search-field input {
+        margin-bottom: 16px;
+    }
+
+    .weatherIcon {
+        width: 60px; /* Adjust size for smaller screens */
+        margin-top: 20px;
+    }
+
+
+    /* For suggestion add here any additional adjustments for mobile here */
+}

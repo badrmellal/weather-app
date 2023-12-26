@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+  <script src="script.js"></script>
+</head>
+
+<body class="bg-cover bg-center bg-no-repeat flex justify-center h-screen " style="background-image: url('/images/weather-badr-app.jpg'); opacity: 0.8; ">
+  <div class="flex items-center justify-center h-full">
+    <div class="card bg-gradient-to-b from-gray-800 to-gray-700 p-8 m-4 mt-4 rounded-2xl">
+      <div class="search-field m-4">
+        <input type="text" placeholder="Name of your city" spellcheck="false"
+               class="border-0 outline-0 bg-gray-900 text-gray-300 p-4 h-16 rounded-md mb-4 text-lg">
+        <button id="searchButton" class="px-4 py-2 ml-3 text-sm text-indigo-100 font-semibold rounded-full border border-purple-100 hover:text-white hover:bg-black focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2"
+        >
+          Search
+        </button>
+      </div>
+      <div class="weather-details ">
+        <div class="place">
+          <img src="" alt="" class="weatherIcon" />
+          <h1 class="temperature text-4xl font-semibold"></h1>
+          <h2 class="city text-xl font-semibold"></h2>
+        </div>
+        <div class="details ">
+        
+          <div class="col flex text-center">
+            <img src="" alt="" class="condition w-10 mr-2" />
+            <div>
+              <p class="condition text-xl font-semibold text-gray-200 "></p>
+              
+            </div>
+          </div>
+          <div class="col flex text-center">
+            <img src="" alt="" class="wind-speed w-10 mr-2" />
+            <div>
+              <p class="wind-speed text-xl font-semibold text-gray-200 "></p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add forecast-container here -->
+      <div class="forecast-container text-lg text-white"></div>
+      <div class="days"></div>
+
+    </div>
+  </div>
+</body>
+
+</html>
+
